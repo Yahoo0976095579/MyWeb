@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>李柏駿的網站</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- AOS Animation -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+      <div class="loader-circle"></div>
+    </div>
+
+    <!-- Background Animation -->
+    <div class="bg-animation"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo">李柏駿</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">首頁</a></li>
+          <li><a href="#tech">技術棧</a></li>
+          <li><a href="#projects">專案</a></li>
+          <li><a href="#contact">聯絡</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content" data-aos="fade-up">
+        <h1 class="hero-title">Hi, I'm 李柏駿</h1>
+        <p class="hero-subtitle">國立勤益科技大學 | 資工系應屆畢業生</p>
+        <p class="hero-description">
+          專注於 ASP.NET Core Web API 後端與 ASP.NET Core MVC 開發
+          <br />持續學習並實作全端專案，致力於提升軟體架構與開發效率
+        </p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-folder"></i> 查看專案
+          </a>
+          <a
+            href="https://github.com/Yahoo0976095579"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="tech-stack" id="tech">
+      <h2 class="section-title" data-aos="fade-up">技術棧 Tech Stack</h2>
+      <div class="tech-grid">
+        <div class="tech-category" data-aos="fade-up" data-aos-delay="100">
+          <h3><i class="fas fa-server"></i> 後端開發</h3>
+          <div class="tech-list">
+            <span class="tech-item">C#</span>
+            <span class="tech-item">ASP.NET Core (.NET 8)</span>
+            <span class="tech-item">Entity Framework Core</span>
+            <span class="tech-item">RESTful API</span>
+            <span class="tech-item">SQL Server</span>
+            <span class="tech-item">JWT</span>
+            <span class="tech-item">Identity 驗證</span>
+          </div>
+        </div>
+
+        <div class="tech-category" data-aos="fade-up" data-aos-delay="200">
+          <h3><i class="fas fa-laptop-code"></i> 前端開發</h3>
+          <div class="tech-list">
+            <span class="tech-item">JavaScript (ES6+)</span>
+            <span class="tech-item">Vue 3</span>
+            <span class="tech-item">Vite</span>
+            <span class="tech-item">Pinia</span>
+            <span class="tech-item">Vue Router</span>
+            <span class="tech-item">Bootstrap 5</span>
+            <span class="tech-item">HTML5</span>
+            <span class="tech-item">CSS3</span>
+          </div>
+        </div>
+
+        <div class="tech-category" data-aos="fade-up" data-aos-delay="300">
+          <h3><i class="fas fa-cloud"></i> 部署與工具</h3>
+          <div class="tech-list">
+            <span class="tech-item">Azure App Service</span>
+            <span class="tech-item">Vercel</span>
+            <span class="tech-item">Render</span>
+            <span class="tech-item">Git</span>
+            <span class="tech-item">GitHub</span>
+            <span class="tech-item">Visual Studio</span>
+            <span class="tech-item">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <h2 class="section-title" data-aos="fade-up">專案作品</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-icon">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">互動式待辦事項管理系統</h3>
+            <p class="project-description">
+              提供待辦清單的新增、編輯、完成與刪除功能，支援響應式介面與基礎的任務管理流程。
+            </p>
+            <div class="project-tech">
+              <span>Vue 3</span>
+              <span>ASP.NET Core</span>
+              <span>RESTful API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">電商後台管理系統</h3>
+            <p class="project-description">
+              具備商品、訂單與用戶管理功能，並整合權限驗證，模擬中小型電商後台的核心流程。
+            </p>
+            <div class="project-tech">
+              <span>ASP.NET Core MVC</span>
+              <span>Identity</span>
+              <span>SQL Server</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-icon">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">記帳網站</h3>
+            <p class="project-description">
+              支援個人與群組記帳，提供儀表板分析、多條件篩選與即時通知，並針對桌機與手機優化介面。
+            </p>
+            <div class="project-tech">
+              <span>Vue 3</span>
+              <span>Pinia</span>
+              <span>Chart.js</span>
+              <span>Bootstrap 5</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-icon">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">線上點餐系統</h3>
+            <p class="project-description">
+              模擬完整的點餐流程，包括菜單瀏覽、購物車、付款與訂單紀錄，帶來貼近實務的使用體驗。
+            </p>
+            <div class="project-tech">
+              <span>Full-Stack</span>
+              <span>Payment API</span>
+              <span>Real-time Updates</span>
+            </div>
+          </div>
+        </div>
+
+        <!--影像辨識-->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">影像辨識系統</h3>
+            <p class="project-description">
+              利用YOLOv5s結合EfficientNetv2s輕量級模型，解決YOLO在農場品抽檢的準確率與正確率問題。
+            </p>
+            <div class="project-tech">
+              <span>YOLOv5s</span>
+              <span>EfficientNetv2s</span>
+              <span>vue3</span>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        <!--推拿網站-->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-icon">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">推拿網站</h3>
+            <p class="project-description">
+              「友仁傳統整復中心」官方形象網站，使用 Nuxt 3 + Tailwind CSS
+              開發，具備 RWD、SEO 優化與即時營業狀態顯示。
+            </p>
+            <div class="project-tech">
+              <span>Nuxt 3</span>
+              <span>Tailwind CSS</span>
+              <span>RWD</span>
+              <span>SEO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="contact-content">
+        <h2 class="section-title" data-aos="fade-up">聯絡我</h2>
+        <p data-aos="fade-up" data-aos-delay="100">
+          歡迎與我聯繫討論專案合作或技術交流
+        </p>
+        <div class="contact-links" data-aos="fade-up" data-aos-delay="200">
+          <a href="mailto:yahoo0976095579@gmail.com" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            Email
+          </a>
+          <a
+            href="https://github.com/Yahoo0976095579"
+            target="_blank"
+            class="contact-link"
+          >
+            <i class="fab fa-github"></i>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer-text">© 2024 李柏駿. All rights reserved.</p>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
